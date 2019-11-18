@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styleTest.css" media="screen" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>
+      Hunt
+    </title>
+    <meta charset="utf-8">
+    
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+  <body onload="loadCreateGame()">
+
+    <div id="mySidebar" class="sidebar">
+
+      <h7 id="hello">Hello<br> <div id="userName" style="display: inline;"></div></h7>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./allGames.html">All Games</a>
+      <a href="./currentGame.html">Current Game</a>
+      <a href="./joinGame.html">Join Game</a>
+      <a href="#">Host Game</a>
+      <a href="./newGame.html">New Game</a>
+      <a href="#" onclick="logout()">Log out</a>
+      <img src="logo32.png" class="photobar"/>
+    </div>
+
+    <div id="main">
+
+      <div id="title">
+        <button class="openbtn" onclick="openNav()">☰ MENU</button>
+        <img src="logo32.png" style="width: auto; height: auto;max-width: 150px;max-height: 150px; float:right;"/>
+      </div>
+      
+      <div id="content" style="padding-top: 60px;">
+          <div class="table-responsive">          
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Riddle Id</th>
+                  <th>Riddle text</th>
+                  <th>Hint</th>
+                </tr>
+              </thead>
+              <tbody id="riddles">
+                <tr>
+                  <td>1</td>
+                  <td>Anna</td>
+                  <td>Pitt</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+
+        <label>Write Riddles ID's separeted with commas: </label>
+        <input type="text" id='riddleList' placeholder="Enter riddle Id's" required>  
+        <p style="color: red; font-weight: bold;" id="error" hidden>stupid</p>
+        <button id="createGame" onclick="submitGame()">Create Game</button><br>
+      <br>
+      <h2>Create a new riddle:</h2>
+      <form action="#">
+        
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Latitude</label>
+          <textarea class="form-control" id="loc1" rows="1"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Longtitude</label>
+          <textarea class="form-control" id="loc2" rows="1"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Riddle text</label>
+          <textarea class="form-control" id="content2" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Riddle hint</label>
+          <textarea class="form-control" id="hint2" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="Image">Upload riddle image:</label>
+          <input type="file" class="form-control-file" id="file2">
+        </div>
+        <button id="submit" onclick="submitRiddle()">Submit</button><br>
+
+      </form>
+
+            
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+
+
+          </div>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+   
+
+  </body>
+</html> 

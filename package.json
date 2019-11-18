@@ -1,0 +1,27 @@
+{
+  "name": "greatunihack2019",
+  "version": "1.0.0",
+  "description": "Scavenger Hunt",
+  "main": "server.js",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6",
+    "helmet": "^3.21.2",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.cs.man.ac.uk/n12639id/hunt"
+  },
+  "keywords": [
+    "hunt"
+  ],
+  "author": "Team Potatoes",
+  "license": "ISC"
+}

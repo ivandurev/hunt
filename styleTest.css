@@ -1,0 +1,210 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+#myForm {
+  
+  border: 3px solid #ffffff;
+  width: 30%;
+  margin: auto;
+  padding: 15px;
+  background-color: rgb(243, 240, 240);
+  position: fixed;
+  top: 25%;
+  left: 33%;
+  box-sizing: border-box;
+}
+#popup
+{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  max-width: 
+}
+#popup img
+{
+  width: 100%;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: rgb(207, 201, 201);
+}
+#content #statusMessage{
+  color: #444;
+  font-size: 20px;
+}
+#log, #join, #joinrand, #submit, #createGame, #selectGame, .reviewButton, #sendLoc, #checkLoc
+{
+  background-color: #5a0186;
+  color: rgba(245, 245, 245, 0.623);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#log:hover, #join:hover, #joinrand:hover, #submit:hover, #createGame:hover, #selectGame:hover, .reviewButton:hover, #checkLoc:hover, #sendLoc:hover {
+  opacity: 0.8;
+}
+
+#crtacc 
+{
+  background-color: #53005a;
+  color: rgba(245, 245, 245, 0.623);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#hunt
+{
+  font-size:25px;
+  text-align: center;
+}
+
+.photobar
+{
+  width: auto; 
+  height: auto;
+  max-width: 250px;
+  max-height: 300px;
+}
+#title
+{
+  border: 3px solid #ffffff;
+  width: 100%;
+  margin: auto;    
+  background-color:#660099;
+  position: absolute;
+  
+}
+/* #titlename
+{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+} */
+#hello
+{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffcc33;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #660099;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a , #mySidebar a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover, #mySidebar a:hover {
+  color: #ffcc33;
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #660099;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  color: #ffcc33;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+#hintButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #444;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#hintButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#hintButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#hintButton:hover span {
+  padding-right: 25px;
+}
+
+#hintButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.w3-theme {
+  color:white !important;background-color:#444 !important
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 800px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+
+
+
+
+
+}

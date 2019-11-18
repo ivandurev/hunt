@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styleTest.css" media="screen" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+      Hunt
+    </title>
+    <meta charset="utf-8">
+    <script src="index.js"></script>
+  </head>
+  <body>
+
+    <div id="mySidebar" class="sidebar">
+      <!-- <p>Hello, <div id="userName" style="display: inline;"></div> username</p> tried to include username--> 
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#">All Games</a>
+      <a href="#">Current Game</a>
+      <a href="#">Join Game</a>
+      <a href="#">Host Game</a>
+      <a href="#">New Game</a>
+      <a href="#">Log out</a>
+    </div>
+
+    <div id="main">
+
+      <button class="openbtn" onclick="openNav()">☰ MENU</button>
+      <h2>Current Game <div id="currGameId" style="display: inline;"></div> :</h2>
+      <h2>Riddle number <div id="completedRiddles" style="display: inline;"></div> :</h2>
+      <div id="content">
+            <img src="riddle1_img.png"/>
+            <h3>Do you need help?</h3>
+
+
+            <button onclick="showHint()" id="hintButton" style="vertical-align:middle" hidden><span>Hint </span></button>
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-animate-opacity">
+                <header class="w3-container w3-theme"> 
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                  class="w3-button w3-display-topright">&times;</span>
+                  <h2 id="popuptitle">HINT</h2>
+                </header>
+                <div class="w3-container" id="popup">
+                  <p>something </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+
+
+
+          </div>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+   
+
+  </body>
+</html> 
